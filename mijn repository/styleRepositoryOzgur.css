@@ -1,0 +1,18 @@
+.titel
+{
+    font-size: 150%;
+    text-align: center;
+}
+
+body
+{
+    background-color: #E0FFFF;
+}
+
+hr
+{
+	color: red;
+	background-color: red;
+	height: 3px;
+	border: 0;
+}
