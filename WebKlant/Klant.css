@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/achtergrondIstanbul.jpg);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 85);
+    overflow: hidden;
+}
+
+.flex-container>div{
+    background-color: rgb(255, 255, 85);
+    width: 140px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-family: monospace;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+div.container {
+    width: 100%;
+}
+
+header{
+    background-image: url(img/koca.png)
+}
+
+header, footer {
+    font-size: 15px;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+article {
+    color: white;
+    background-color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: verdana;
+    font-size: 15px;
+    overflow: hidden;
+}
