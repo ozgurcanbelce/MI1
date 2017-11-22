@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/achtergrondIstanbul.jpg);
+    background-image: url(img/background.png);
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -12,7 +12,7 @@ body{
     overflow: hidden;
 }
 
-.flex-container>div{
+.flex-container > div{
     background-color: rgb(255, 255, 85);
     width: 140px;
     margin: 5px;
@@ -21,6 +21,41 @@ body{
     font-family: monospace;
     font-size: 30px;
     overflow: hidden;
+}
+
+.left {
+  background-color:rgb(255, 255, 85);
+  padding:15px;
+  float:left;
+  width:25%;/*The width is 20%, by default*/
+}
+
+.main {
+  background-color:rgb(255, 255, 85);
+  padding:15px;
+  float:left;
+  width:25%;/*The width is 60%, by default*/
+}
+
+.main2 {
+  background-color:rgb(255, 255, 85);
+  padding:15px;
+  float:left;
+  width:25%;/*The width is 60%, by default*/
+}
+
+.right {
+  background-color:rgb(255, 255, 85);
+  padding:15px;
+  float:left;
+  width:25%;/*The width is 20%, by default*/
+}
+
+/*Use a media query to add a break point at 800px:*/
+@media (max-width:500px) {
+  .left, .main, .main2 ,.right {
+    width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
+  }
 }
 
 div.container {
