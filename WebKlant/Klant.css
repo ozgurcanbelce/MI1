@@ -1,77 +1,13 @@
-body{
+body {
+    font-family:Verdana ,sans-serif;
     background-image: url(img/background.png);
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 85);
-    overflow: hidden;
-}
-
-.flex-container > div{
-    background-color: rgb(255, 255, 85);
-    width: 140px;
-    margin: 5px;
-    text-align: center;
-    line-height: 50px;
-    font-family: monospace;
-    font-size: 30px;
-    overflow: hidden;
-}
-
-.left {
-  background-color:rgb(255, 255, 85);
-  padding:15px;
-  float:left;
-  width:25%;/*The width is 20%, by default*/
-}
-
-.main {
-  background-color:rgb(255, 255, 85);
-  padding:15px;
-  float:left;
-  width:25%;/*The width is 60%, by default*/
-}
-
-.main2 {
-  background-color:rgb(255, 255, 85);
-  padding:15px;
-  float:left;
-  width:25%;/*The width is 60%, by default*/
-}
-
-.right {
-  background-color:rgb(255, 255, 85);
-  padding:15px;
-  float:left;
-  width:25%;/*The width is 20%, by default*/
-}
-
-/*Use a media query to add a break point at 800px:*/
-@media (max-width:500px) {
-  .left, .main, .main2 ,.right {
-    width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
-  }
-}
-
-div.container {
-    width: 100%;
-}
-
-header{
-    background-image: url(img/koca.png)
-}
-
 header, footer {
-    font-size: 15px;
+    font-size: 70%;
     padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
     text-align: center;
 }
 
@@ -83,4 +19,143 @@ article {
     font-family: verdana;
     font-size: 15px;
     overflow: hidden;
+}
+
+h1 {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 125;
+}
+
+p {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 5;
+}
+
+footer {
+    color: rgb(255, 255, 85);
+}
+
+div.container {
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(255, 255, 85);
+    text-transform: lowercase;
+}
+
+ul.nav {
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: 125%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav a:hover {
+    background-color: black;
+    color: rgb(255, 255, 85);
+}
+
+@media screen and (max-width: 1100px) {
+	body {
+    	padding-left: 0%;
+    	padding-right: 0%;
+	}
+    
+    header, footer {
+    	font-size: 110%;
+    	text-align: center;
+	}
+    
+    article {
+    	padding-left: 10%;
+   		padding-right: 10%;
+    	font-size: 110%;
+	}
+    
+    h1 {
+    	font-size: 110%;
+   		margin-top: 5%;
+	}
+
+    footer {
+    	font-size: 100%;
+    	color: black;
+        background-color: rgb(255, 255, 85);
+        margin-top: 2%;
+        padding: 1%;
+	}
+    
+    .nav {
+    	font-size: 100%;
+    	padding: 1%;
+    	text-transform: uppercase;
+	}
+    
+    ul.nav {
+    	margin-top: 1%;
+	}
+    
+    .nav a {
+    	color: black;
+    	padding-top: 0%;
+    	padding-bottom: 0%;
+	}
+    
+    .nav a:hover {
+        padding-top: 0%;
+    	padding-bottom: 0%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	body {
+    	padding-left: 0%;
+    	padding-right: 0%;
+	}
+    
+    header {
+    	font-size: 110%;
+        color: white;
+        background-color: black;
+	}
+    
+    article {
+    	padding-left: 1%;
+   		padding-right: 1%;
+    	font-size: 80%;
+	}
+    
+    h1 {
+    	font-size: 115%;
+	}
+
+    nav li {
+    	display: table;
+    	font-size: 100%;
+    }
 }
