@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="invoerformulier">
+        <meta name="keywords" content="invoerformulier">
+        <meta name="author" content="Özgürcan Belce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="invoerformulier.css">
+        <title>invoerformulier</title>
+    </head>
+
+    <body>
+        <h3>Invoerformulier</h3><hr />
+        
+        <div>
+            <form action="/action_page.php">
+                <h2><label for="familienaam">Familienaam</label></h2>
+                <input type="text" id="familienaam" name="firstname" placeholder="Belce" autocomplete="on" required>
+                <h2><label for="voornaam">Voornaam</label></h2>
+                <input type="text" id="voornaam" name="lastname" placeholder="Özgürcan" autocomplete="on" required>
+                <h2><label for="mail">E-mail</label></h2>
+                <input type="email" id="email" name="user_email" placeholder="ozgurcan.belce@hotmail.com"  autocomplete="on" required>
+            
+                <h2><label for="geslacht">Geslacht</label><br /></h2>
+                <label for="man" style="border: solid black 2px;padding:0.2em;border-radius: 4px">Man<input style="margin-left: 20px;" type="radio" name="geslacht" id="man" value="man"></label><br />
+                <label for="vrouw" style="border: solid black 2px;padding:0.2em;border-radius: 4px">Vrouw<input style="margin-left: 20px;" type="radio" name="geslacht" id="vrouw" value="vrouw"></label><br />
+                <label for="andere" style="border: solid black 2px;padding:0.2em;border-radius: 4px">Andere<input style="margin-left: 20px;" type="radio" name="geslacht" id="andere" value="andere"></label><br />
+                
+                <h2><label for="geboortedatum">Geboortedatum</label></h2>
+                <input type="date" name="bday" min="1900-01-01" max="2017-12-31"><br />
+                
+                <h2><label for="favorieteVakken">Favoriete vakken</label><br /></h2>
+                <input type="checkbox" name="mobielEnInternet1" value="vak1">Mobiel & internet 1<br />
+                <input type="checkbox" name="AD1" value="vak2">Application development 1<br />
+                <input type="checkbox" name="Nederlands" value="vak3">Communicatietraining 1.1: Nederlands<br />
+                <input type="checkbox" name="Frans" value="vak4">Communicatietraining 2.1: Frans<br />
+                <input type="checkbox" name="databaseDevelopment1" value="vak5">Database development 1<br />
+                <input type="checkbox" name="ICTBusinessProjectsEnTrends1" value="vak6">ICT Business projects & trends 1<br />
+                <input type="checkbox" name="informationManagement1" value="vak7">Information management 1<br />
+                <input type="checkbox" name="networkDesignAndTest1" value="vak8">Network Design and Test 1<br />
+                <input type="checkbox" name="softwareEngineering1" value="vak9">Software engineering 1<br />
+                
+<!--'Beoogde punten MI1' : waarbij je een bereik geeft tussen 10 en 20.-->
+                
+                <h2><label for="leuksteDagen">Leukste dagen van de week</label><br /></h2>
+                <input type="checkbox" name="Maandag" value="Maandag">Maandag<br />
+                <input type="checkbox" name="Dinsdag" value="Dinsdag">Dinsdag<br />
+                <input type="checkbox" name="Woensdag" value="Woensdag">Woensdag<br />
+                <input type="checkbox" name="Donderdag" value="Donderdag">Donderdag<br />
+                <input type="checkbox" name="Vrijdag" value="Vrijdag">Vrijdag<br />
+                <input type="checkbox" name="Zaterdag" value="Zaterdag">Zaterdag<br />
+                <input type="checkbox" name="Zondag" value="Zondag">Zondag<br />
+                
+                <h2><label for="Commentaar">Opmerkingen</label><br /></h2>
+                <textarea name="commentaar" rows="10" cols="100">Hier kunt u een commentaar schrijven.</textarea><br />
+            
+                <input type="submit"> 
+            </form> 
+        </div>
+    </body>
+</html>
