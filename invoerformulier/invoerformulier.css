@@ -1,3 +1,7 @@
+body {
+    background-color: darkgreen;
+}
+
 h3 {
     text-align: center;
     font-size: 150%;
@@ -12,6 +16,7 @@ input[type=text], select {
     border: 2px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: lightgreen;
 }
 
 input[type=email], select {
@@ -22,6 +27,7 @@ input[type=email], select {
     border: 2px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: lightgreen;
 }
 
 input[type=radio], select {
@@ -36,11 +42,17 @@ input[type=date], select {
     border: 2px solid black;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: lightgreen;
 }
 
 input[type=checkbox], select {
     margin-right: 18px;
     margin-bottom: 8px;
+}
+
+textarea {
+    color:black;
+    background-color: lightgreen;
 }
 
 input[type=submit] {
@@ -57,12 +69,14 @@ input[type=submit] {
 
 input[type=submit]:hover {
     color: black;
-    background-color: white;
+    background-color: darkgreen;
 }
 
 div {
-    color: white;
+    color: black;
     border-radius: 5px;
-    background-color: darkgreen;
-    padding: 20px;
+    background-color: white;
+    padding: 22px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
