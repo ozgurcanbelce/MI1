@@ -1,0 +1,13 @@
+div {
+    width: 300px;
+    height: 100px;
+    color:azure;
+    background-color: black;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    margin-top: 150px;
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
+}

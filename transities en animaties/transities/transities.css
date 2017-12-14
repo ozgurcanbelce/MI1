@@ -1,0 +1,12 @@
+div {
+    width: 50px;
+    height: 150px;
+    background: rgb(225,225,85);
+    -webkit-transition: width 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+
+div:hover {
+    width: 300px;
+}
